@@ -4,14 +4,13 @@
 #include <iostream>
 #include <fstream>
 
-#include "include/Printer.hpp"
+#include "Printer.hpp"
 
 #define MEGA_PTR 1048576
 
 class PayloadGenerator : public Printer {
 public:
     PayloadGenerator(std::string Language, int TextColor, std::string FileExt, int FileSize);
-    ~PayloadGenerator();
 
     std::string GetFileName();
     int MakeFile();

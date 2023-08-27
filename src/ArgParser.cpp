@@ -1,4 +1,4 @@
-#include "include/ArgParser.hpp"
+#include "ArgParser.hpp"
 
 ArgParser::ArgParser(int ReqQuantity, int HelpArgPos, int argc, char* argv){
 

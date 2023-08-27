@@ -127,7 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArgParser.cpp" />
     <ClCompile Include="loader.cpp" />
+    <ClCompile Include="PayloadGenerator.cpp" />
+    <ClCompile Include="Printer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArgParser.hpp" />
+    <ClInclude Include="Loader.hpp" />
+    <ClInclude Include="PayloadGenerator.hpp" />
+    <ClInclude Include="Printer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
