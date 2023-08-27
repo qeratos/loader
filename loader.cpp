@@ -1,13 +1,12 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 
-#include "include/Loader.hpp"
-#include "include/PayloadGenerator.hpp"
-#include "include/ArgParser.hpp"
+#include "Loader.hpp"
+#include "PayloadGenerator.hpp"
+#include "ArgParser.hpp"
 
-Loader::Loader(LPCWSTR LDisk, std::string sDisk){
-}
 
-int Loader::ChooseReportInterval(){
+int Loader::ChooseReportInterval()
+{
     if (this->FileSize < 50) {
         return 50;
     }

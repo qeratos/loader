@@ -70,6 +70,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)$(ProjectName)\include</IncludePath>
+    <SourcePath>$(SolutionDir)$(ProjectName)\src</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -104,6 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)$(ProjectName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,16 +132,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ArgParser.cpp" />
     <ClCompile Include="loader.cpp" />
-    <ClCompile Include="PayloadGenerator.cpp" />
-    <ClCompile Include="Printer.cpp" />
+    <ClCompile Include="src\ArgParser.cpp" />
+    <ClCompile Include="src\PayloadGenerator.cpp" />
+    <ClCompile Include="src\Printer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArgParser.hpp" />
-    <ClInclude Include="Loader.hpp" />
-    <ClInclude Include="PayloadGenerator.hpp" />
-    <ClInclude Include="Printer.hpp" />
+    <ClInclude Include="include\ArgParser.hpp" />
+    <ClInclude Include="include\Loader.hpp" />
+    <ClInclude Include="include\PayloadGenerator.hpp" />
+    <ClInclude Include="include\Printer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

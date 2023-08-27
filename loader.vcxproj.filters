@@ -18,27 +18,27 @@
     <ClCompile Include="loader.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="PayloadGenerator.cpp">
+    <ClCompile Include="src\ArgParser.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Printer.cpp">
+    <ClCompile Include="src\PayloadGenerator.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="ArgParser.cpp">
+    <ClCompile Include="src\Printer.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PayloadGenerator.hpp">
+    <ClInclude Include="include\ArgParser.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Printer.hpp">
+    <ClInclude Include="include\Loader.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Loader.hpp">
+    <ClInclude Include="include\PayloadGenerator.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ArgParser.hpp">
+    <ClInclude Include="include\Printer.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
